@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+                publicKey: "k_sf3WCvHY2cmvjSI",
+            });
+        })();
+    </script>
+</head>
+<body>
+    <div id="header">
+        <div class="nav">
+            <h1 class="portfolio"><span class="logo">D</span>hruv.</h1>
+            <nav>
+                <ul id="sidemenu">
+                    <li class="tablinks"><a href="#header">Home</a></li>
+                    <li class="tablinks"><a href="#about">About</a></li>
+                    <li class="tablinks"><a href="#skills">Skills</a></li>
+                    <li class="tablinks"><a href="#projects">Projects</a></li>
+                    <li class="tablinks"><a href="#contact">Contact</a></li>
+                    <img src="close.png" onclick="closemenu()" class="close">
+                </ul>
+                <img src="menu.png" class="menu" onclick="openmenu()">
+            </nav>
+        </div>
+        <div class="header-center">
+            <div class="description">
+                <span class="message"></span>
+                <h1>Hi, I'm <span class="logo">Dhruv Aggarwal</span></h1>
+                <h1>From Rishikesh, Uttarakhand</h1>
+                <a class="resume" href="DhruvAggarwal.pdf" download><div class="btn1">My Resume</div></a>
+            </div>
+            <div class="port-photo"></div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="about-1">
+            <img src="image2.jpeg">
+        </div>
+        <div class="about-2">
+            <div class="bolder">About Me</div>
+            <p>I am a Computer Engineering Student working towards my B.Tech in Computer Science and Engineering. I've engineered a strong foundation in programming, mastering languages like C, C++, Java, Python, PHP, SQL, HTML, CSS and JavaScript. I enjoy learning new technologies and have completed several courses on Coursera, covering Web Development, Git, Github and Algorithmic Toolbox.
+            </p>
+            <div class="tabs">
+                <ul class="ul">
+                    <li class="listTabs activeTabs" onclick="openTab('education')">Education</li>
+                    <li class="listTabs" onclick="openTab('achievements')">Achievements</li>
+                    <li class="listTabs" onclick="openTab('hobbies')">Hobbies</li>
+                </ul>
+                <div class="educationFills listContents activeContents" id="education">
+                    <ul>
+                        <li class="logo">2022-Present</li>
+                        <li>I am pursuing a B.Tech in Computer Science and Engineering at Graphic Era University, Dehradun, maintaining a CGPA of 9.45.</li>
+                        <li class="logo">2021-2022</li>
+                        <li>I have completed my 12th grade at NDS School, Shyampur Rishikesh, with a score of 90.2% under the CBSE board.</li>
+                        <li class="logo">2019-2020</li>
+                        <li>I have completed my 10th grade at NDS School, Shyampur Rishikesh, with a score of 89.80% under the CBSE board.</li>
+                    </ul>
+                </div>
+                <div class="achivementsFills listContents" id="achievements">
+                    <ul>
+                    <li><b>Mentored more than 200 students in Krishna Consciousness </b>- Delivered personalized spiritual mentorship and instruction, nurturing individuals and practice of Krishna Consciousness principles.</li>
+                    </ul>
+                </div>
+                <div class="hobbiesFills listContents" id="hobbies">
+                    <ul>
+                    <li>Reading Spiritual Books</li>
+                    <li>Playing Sports</li>
+                    <li>Cooking</li>
+                    <li>Programming and Coding</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="skills">
+        <div class="myskills">My Skills</div>
+        <div class="skillsLang">
+            <div class="skillsKnown">C</div>
+            <div class="skillsKnown">C++</div>
+            <div class="skillsKnown">Java</div>
+            <div class="skillsKnown">HTML5</div>
+            <div class="skillsKnown">CSS3</div>
+            <div class="skillsKnown">Javascript</div>
+            <div class="skillsKnown">Machine Learning</div>
+            <div class="skillsKnown">PHP</div>
+            <div class="skillsKnown">SQL</div>
+            <div class="skillsKnown">Python</div>
+            <div class="skillsKnown">Data Structures</div>
+            <div class="skillsKnown">Algorithms</div>
+            <div class="skillsKnown">Tensorflow</div>
+            <div class="skillsKnown">Scikit-Learn</div>
+        </div>
+        <div class="myskills mycertifications">My Certifications</div>
+        <div class="certifications">
+            <div class="certificate-1 certificate">
+                <a href="https://www.coursera.org/account/accomplishments/verify/QBRJWBDGLGXE"><img class="img" src="python.jpg"><br><span>Couresa Python Certificate</span></a>
+            </div>
+            <div class="certificate-2 certificate">
+                <a href="https://www.coursera.org/account/accomplishments/verify/WED7W322JNA8"><img class="img" src="webdev.jpg"><br><span>Couresa Web Development Certificate</span></a>
+            </div>
+            <div class="certificate-3 certificate">
+                <a href="https://www.coursera.org/account/accomplishments/verify/JVKMM47RPDZL"><img class="img" src="git.jpg"><br><span>Couresa Git and Github Certificate</span></a>
+            </div>
+            <div class="certificate-4 certificate">
+                <a href="https://www.coursera.org/account/accomplishments/verify/9ABG7NYZWS46"><img class="img" src="algo.jpg"><br><span>Couresa Algorithmic Toolbox Certificate</span></a>
+            </div>
+        </div>
+    </div>
+    <div id="projects">
+        <div class="myskills myprojects">My Projects</div>
+        <div class="projects">
+            <div class="project-1 project">
+                <a href="https://github.com/dhruvaggarwal419/Currency_Convertor"><img class="img" src="cc.png"><br><span>Currency Convertor</span></a>
+            </div>
+            <div class="project-2 project">
+                <a href="https://github.com/dhruvaggarwal419/BigInteger"><img class="img" src="bi.png"><br><span>Big-Integer Library</span></a>
+            </div>
+            <div class="project-3 project">
+                <a href="https://github.com/dhruvaggarwal419/Banking-Management-System"><img class="img" src="bm.png"><br><span>Banking Management System</span></a>
+            </div>
+            <div class="project-4 project">
+                <a href="https://github.com/dhruvaggarwal419/Notes-Management-System"><img class="img" src="nm.png"><br><span>Notes Management System</span></a>
+            </div>
+            <div class="project-5 project">
+                <a href="https://github.com/dhruvaggarwal419/Weather-App"><img class="img" src="wa.png"><br><span>Weather App</span></a>
+            </div>
+            <div class="project-6 project">
+                <a href="https://github.com/dhruvaggarwal419/Tic-Tac-Toe"><img class="img" src="tt.png"><br><span>Tic-Tac-Toe</span></a>
+            </div>
+            <a href="https://github.com/dhruvaggarwal419" class="see-more">See more</a>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="myskills">Contact Me</div>
+        <div class="row">
+            <div class="col1">
+                <div class="email">
+                    <img class="icons" src="mail.png">
+                    <div>aggarwaldhruv419@gmail.com</div>
+                </div>
+                <div class="phone">
+                    <img class="icons" src="phone.png">
+                    <div>8864836870</div>
+                </div>
+                <a href="https://www.instagram.com/_dhruv._.aggarwal_02?igsh=andmN2R6aW5pOHJn"><img class="icons" src="instagram.png"></a>
+                <a href="https://www.linkedin.com/in/dhruv-aggarwal-5a0121274"><img class="icons" src="linkedin.png"></a>
+                <a href="https://github.com/dhruvaggarwal419"><img class="icons" src="github.png"></a>
+            </div>
+            <div class="col2">
+                <form name="submit-to-google-sheet">
+                    <label for="fullName"></label>
+                    <input type="text" name="Name" placeholder="Your Name" id="fullName" required>
+                    <label for="email_id"></label>
+                    <input name = "Email" type="email" id="email_id" placeholder="Your Email" required>
+                    <label for="message"></label>
+                    <textarea name="Message" id="message" placeholder="Your Message" required></textarea>
+                    <button type="submit" onclick="SendMail()" class="btn">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('.message', {
+          strings: ['Full Stack Web Developer.', 'Software Developer.'],
+          typeSpeed: 50,
+        });
+    </script>
+    <script>
+        let sidemenu = document.getElementById('sidemenu');
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-30rem";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxNgYI41xjyxt041iVfejDEfYlZt2m4RY51nWt0XaQ89LYY4_LfXAEH6RNWtNtxOYSK/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById('msg');
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully! Check Your Email!";
+                setTimeout(function(){
+                    msg.innerHTML = "";
+                }, 5000);
+                form.reset();
+            })
+        })
+      </script>
+</body>
+</html>
